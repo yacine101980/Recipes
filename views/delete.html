@@ -1,0 +1,14 @@
+{{> header}}
+
+  <div>
+    <div>
+      <h1> Supprimer une recette </h1>
+      <p>Êtes-vous sûr de vouloir supprimer la recette "{{title}}" ?</p>
+      <form action="/delete/{{id}}" method="post">
+        <input type="submit" class="btn btn-danger" value="Effacer">
+        <a href="/read/{{id}}">Annuler<a>
+      </form>
+    </div>
+  </div>
+
+{{> footer}}

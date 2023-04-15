@@ -1,0 +1,32 @@
+{{> header}}
+
+  <div>
+    <div>
+      <h1>{{num_found}} recettes trouvées {{#page}} (page {{page}}/{{num_pages}}) {{/page}}</h1>
+    </div>
+  </div>
+
+  <div class="row row-cols-4 row-cols-md-10 g-4">
+      {{#results}}
+      <div>
+        <a href="/read/{{entry}}">
+          <div>
+            <img src="{{img}}" class="card-img-top">
+            <div class="card-title">
+                <p>{{title}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{/results}}
+  </div>
+
+  {{#next_page}}
+  <div>
+    <div>
+      <a href="/search?query={{query}}&page={{next_page}}">Page suivante</a>
+    </div>
+  </div>
+  {{/next_page}}
+
+{{> footer}}

@@ -1,0 +1,21 @@
+{{> header}}
+
+  <div>
+    <div>
+
+        {{^authenticated}}
+        <a href="/new_user" ><button class="btn btn-secondary">Nouvel utilisateur</button></a>
+        <a href="/login"><button class="btn btn-primary">Se connecter</button></a>
+        {{/authenticated}}
+
+
+        <h1>Cuisiner c'est bon pour la santé</h1>
+
+
+      <img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/04/05/20/29/kitchen-1310290_960_720.jpg">
+
+        
+    </div>
+  </div>
+
+{{> footer}}

@@ -1,0 +1,37 @@
+{{> header}}
+  <div>
+    <div>
+    <h1>{{title}}</h1>
+    <p>
+    <a href="/update/{{id}}">Modifier</a>
+    <a href="/delete/{{id}}">Supprimer</a>
+    </p>
+
+    <p>{{description}}</p>
+    <p>Durée : {{duration}}</p>
+    </div>
+    <div>
+    <img src="{{img}}">
+    </div>
+  </div>
+  <div>
+    <div>
+    Ingrédients :
+    <ul>
+      {{#ingredients}}
+        <li>{{name}}</li>
+      {{/ingredients}}
+    </ul>
+    </div>
+  </div>
+  <div>
+    <div>
+    Étapes :
+    <ol>
+      {{#stages}}
+        <li>{{description}}</li>
+      {{/stages}}
+    </ol>
+    </div>
+  </div>
+{{> footer}}
